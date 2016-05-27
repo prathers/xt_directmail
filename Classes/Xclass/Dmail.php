@@ -27,7 +27,7 @@ use DirectMailTeam\DirectMail\DirectMailUtility;
  * @package TYPO3
  * @subpackage xt_directmail
  */
-class DmailV510 extends \DirectMailTeam\DirectMail\Module\Dmail
+class Dmail extends \DirectMailTeam\DirectMail\Module\Dmail
 {
 
     /**
