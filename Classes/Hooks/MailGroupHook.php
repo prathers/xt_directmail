@@ -56,14 +56,14 @@ class MailGroupHook {
          * Here a special solution, because of bug: http://forge.typo3.org/issues/36467
          */
         // mod3: Reciepientlist
-        if ($parentObject->MCONF['name'] == 'DirectMailNavFrame_RecipientList') {  // mod3: Reciepientlist - define reciepient mail groups
+        if ($parentObject->MCONF['name'] == 'txdirectmailM1_txdirectmailM3') {  // mod3: Reciepientlist - define reciepient mail groups
             if ($mailGroup['type'] == 5 && !empty($mailGroup['query'])) {
                 $mails = $this->getUniqueMails($mailGroup['query']);
             }
         }
         // mod2: Direct Mail
         // Since there is called a further method getSingleMailGroup($group_uid), we need this workaround
-        if ($parentObject->MCONF['name'] == 'DirectMailNavFrame_DirectMail') {  // mod2: Direct Mail - prepair sending newsletter
+        if ($parentObject->MCONF['name'] == 'txdirectmailM1_txdirectmailM2') {  // mod2: Direct Mail - prepair sending newsletter
             if ($mailGroup[0])
                 $mailGroup = \TYPO3\CMS\Backend\Utility\BackendUtility::getRecord('sys_dmail_group', $mailGroup[0]);
             // for additional types

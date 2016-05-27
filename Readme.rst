@@ -31,7 +31,7 @@ Description
 
 Extends direct_mail to create recipientlist with raw sql query
 
-XClass EXT:direct_mail version 5.1.0
+XClass EXT:direct_mail version 4.1.0
 http://forge.typo3.org/issues/36467
 
 
